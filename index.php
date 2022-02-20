@@ -14,8 +14,7 @@
       <div class="menu-items">
         <?php foreach ($menus as $menu): ?>
           <div class="menu-item">
-            <img src="<?php echo $menu->image ?>">
-            <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+            <h3 class="menu-item-name"><?php echo $menu->getName() ?></h3>
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
           </div>
         <?php endforeach ?>      

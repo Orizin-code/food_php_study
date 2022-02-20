@@ -1,11 +1,15 @@
 <?php
   class Menu {
-    public $name;
-    public $price;
+    private $name;
+    private $price;
     
     public function __construct($name, $price) {
       $this->name = $name;
       $this->price = $price;
+    }
+
+    public function getName() {
+      return $this->name;
     }
 
     public function getTaxIncludedPrice() {
