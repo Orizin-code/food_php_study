@@ -22,7 +22,11 @@
     }
 
     public function getTaxIncludedPrice() {
-      return floor($this->price * 1.08);
+      return floor($this->price * 1.10);
+    }
+
+    public function getTotalPrice() {
+      return $this->getTaxIncludedPrice() * $this->orderCount;
     }
   }
 ?>
