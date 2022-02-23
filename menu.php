@@ -3,6 +3,7 @@
     private $name;
     private $price;
     private $orderCount = 0;
+    public static $count = 4;
     
     public function __construct($name, $price) {
       $this->name = $name;
